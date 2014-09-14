@@ -10,12 +10,7 @@ internals.defaults = {
 };
 
 exports.register = function (plugin, options, next) {
-    // internals.setHapi(plugin.hapi);
-    // var Utils = plugin.hapi.utils;
-    // var settings = Utils.applyToDefaults(internals.defaults, options);
-
     require('./routes.js')(plugin);
-    // console.log(['info', 'Issues'], 'user plugin registered');
     next();
 };
 
