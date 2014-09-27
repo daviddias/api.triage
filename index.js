@@ -9,6 +9,7 @@ var async       = require('async');
 
 var triagePlugins = [ 
   {plugin: require('./plugins/issues'), options: {} },
+  {plugin: require('./plugins/stars'), options: {} },
   {plugin: require('./plugins/github-webhook'), options: {} }
 ];
 
